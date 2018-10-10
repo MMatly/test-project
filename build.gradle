@@ -1,0 +1,19 @@
+apply plugin: 'java'
+
+repositories {
+maven {
+  url "http://repo.mycompany.com/maven2"
+}
+}
+
+sourceCompatibility=1.8
+
+task hello {
+    doLast {
+        println 'Hello world!'
+    }
+}
+
+dependencies {
+   testImplementation 'junit:junit:4.12'
+}
